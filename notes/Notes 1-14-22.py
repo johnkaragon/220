@@ -20,4 +20,4 @@ def convert():
 
 literal = 3  # literal variable: a variable whose value is strictly defined. ie, not calculated or inputted
 for i in range(0,10,2):
-    print(i*literal, "/n")
+    print(i*literal, "\n")
