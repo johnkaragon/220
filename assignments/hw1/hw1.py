@@ -38,6 +38,7 @@ def coffee():
     pounds = eval(input("How many pounds of coffee would you like? "))
     cost = ((10.50 + 0.86) * pounds) + 1.50
     print("Your total is ", cost)
+    #Coffee
 
 
 def kilometers_to_miles():

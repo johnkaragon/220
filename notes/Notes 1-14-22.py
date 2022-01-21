@@ -5,7 +5,7 @@ Steps for problem-solving
 2.) Specifications
     - What will you need in your program (inputs, outputs, etc...)
 3.) Design ... "Pseudocode"
-    -
+    -y
 4.) Implementation
 5.) Test
 6.) Maintain
