@@ -1,5 +1,5 @@
 """
-Name: <your name goes here – first and last>
+Name: <John Aragon>
 <ProgramName>.py
 
 Problem: <Brief, one or two sentence description of the problem that this program solves, in your own words.>
@@ -12,23 +12,38 @@ I certify that this assignment is my own work, but I discussed it with: <Name(s)
 
 
 def calc_rec_area():
-    pass
+    length = eval(input("Enter the length: "))
+    width = eval(input("Enter the width: "))
+    area = length * width
+    print("Area =", area)
+
 
 
 def calc_volume():
-    pass
+   length = eval(input("Enter the length: "))
+   width = eval(input("Enter the width: "))
+   height = eval(input("Enter the height: "))
+   vol = length * width * height
+   print("Volume = ", vol)
 
 
 def shooting_percentage():
-    pass
+    total = eval(input("How many total shots did the player take? "))
+    shots_made = eval(input("How many of those shots were successful? "))
+    percent = (shots_made/total) * 100
+    print("Shooting percentage: ", percent)
 
 
 def coffee():
-    pass
+    pounds = eval(input("How many pounds of coffee would you like? "))
+    cost = ((10.50 + 0.86) * pounds) + 1.50
+    print("Your total is ", cost)
 
 
 def kilometers_to_miles():
-    pass
+    kilos = eval(input("how many kilometers did you travel? "))
+    miles = kilos / 1.61
+    print("Thats ", miles, " miles!")
 
 
 if __name__ == '__main__':
