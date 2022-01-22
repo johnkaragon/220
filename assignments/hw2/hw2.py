@@ -13,19 +13,42 @@ import math
 
 
 def sum_of_threes():
-    pass
+    limit = eval(input("Enter the upper limit of the calculation: "))
+    total = 0
+    for i in range(1, limit + 1):
+        if i % 3 == 0:
+            total += i
+            print(total)
+    print(total)
 
 
 def multiplication_table():
-    pass
+    for i in range(1, 11):
+        line = ""
+        for j in range(1, 11):
+            if j == 10:
+                line = line + str(i * j)
+                print(line)
+            else:
+                line = line + (str(i * j) + "\t")
 
 
 def triangle_area():
-    pass
+    a = eval(input("Enter the length of side a: "))
+    b = eval(input("Enter the length of side b: "))
+    c = eval(input("Enter the length of side c: "))
+    s = (a + b + c) / 2
+    area = math.sqrt(s * (s-a) * (s-b) * (s-c))
+    print("area: ", area)
 
 
 def sum_squares():
-    pass
+    lowlim = eval(input("Enter the lower limit of the function: "))
+    highlim = eval(input("Enter the upper limit of the function: "))
+    total = 0
+    for i in range(lowlim,highlim +1):
+        total += i ** 2
+    print(total)
 
 
 def power():
