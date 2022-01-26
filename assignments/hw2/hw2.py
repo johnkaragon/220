@@ -18,7 +18,6 @@ def sum_of_threes():
     for i in range(1, limit + 1):
         if i % 3 == 0:
             total += i
-            print(total)
     print(total)
 
 
@@ -34,25 +33,30 @@ def multiplication_table():
 
 
 def triangle_area():
-    a = eval(input("Enter the length of side a: "))
-    b = eval(input("Enter the length of side b: "))
-    c = eval(input("Enter the length of side c: "))
-    s = (a + b + c) / 2
-    area = math.sqrt(s * (s-a) * (s-b) * (s-c))
+    a_side = eval(input("Enter the length of side a: "))
+    b_side = eval(input("Enter the length of side b: "))
+    c_side = eval(input("Enter the length of side c: "))
+    s_var = (a_side + b_side + c_side) / 2
+    area = math.sqrt(s_var * (s_var - a_side) * (s_var - b_side) * (s_var - c_side))
     print("area: ", area)
 
 
 def sum_squares():
-    lowlim = eval(input("Enter the lower limit of the function: "))
-    highlim = eval(input("Enter the upper limit of the function: "))
+    low_lim = eval(input("Enter the lower limit of the function: "))
+    high_lim = eval(input("Enter the upper limit of the function: "))
     total = 0
-    for i in range(lowlim,highlim +1):
+    for i in range(low_lim, high_lim + 1):
         total += i ** 2
     print(total)
 
 
 def power():
-    pass
+    base = eval(input("Enter the base: "))
+    exp = eval(input("Enter the power: "))
+    ans = base
+    for i in range(1, exp):
+        ans = ans * base
+    print(ans)
 
 
 if __name__ == '__main__':
