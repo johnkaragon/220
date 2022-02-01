@@ -9,9 +9,9 @@ exceptions = 0
 for i in range(0, size):
     num = eval(input("Enter a new number of the set: "))
     rms_avg = rms_avg + (num ** 2)
-    #if num != 0:
+    # if num != 0:
     harmonic_avg = harmonic_avg + (1 / num)
-    #else:
+    # else:
     #    exceptions = exceptions + 1
     geo_avg = geo_avg * num
 print(math.sqrt(rms_avg / size))
