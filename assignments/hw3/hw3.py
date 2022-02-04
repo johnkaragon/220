@@ -14,7 +14,7 @@ I certify that this assignment is my own work, but I discussed it with: <Name(s)
 def average():
     limit = eval(input("How many grades will you enter? "))
     total = 0
-    for i in range(0,limit):
+    for i in range(0, limit):
         grade = eval(input("Enter Grade: "))
         total = total + grade
     print("Average: ", (total / limit))
@@ -37,11 +37,18 @@ def newton():
 
 
 def sequence():
-    pass
+    limit = eval(input("How many in the sequence? "))
+    for i in range(1, limit + 1):
+        print((i + (i % 2)) - 1)
 
 
 def pi():
-    pass
+    limit = eval(input("How many in the sequence"))
+    accum = 1
+    for i in range(1, limit + 1):
+        n = i - 1
+        accum = accum * ((i + (i % 2)) / ((n + (n % 2)) + 1))
+    print(accum * 2)
 
 
 if __name__ == '__main__':
