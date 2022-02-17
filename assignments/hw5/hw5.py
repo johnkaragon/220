@@ -10,8 +10,8 @@ I certify that this assignment is my own work, but I discussed it with: <Name(s)
 
 
 def name_reverse():
-    names = input("enter your name (first and then last): ")
-    sep_names = names.split(" ")
+    name = input("enter your name (first and then last): ")
+    sep_names = name.split(" ")
     print(sep_names[1], " ", sep_names[0])
 
 
