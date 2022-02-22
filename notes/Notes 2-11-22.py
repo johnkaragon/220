@@ -13,6 +13,8 @@ def month():
 
 month()
 
+#chr
+#ord
 
 
 
