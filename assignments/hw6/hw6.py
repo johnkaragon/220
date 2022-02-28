@@ -75,7 +75,6 @@ def encode_better():
 
 
 
-encode_better()
 
 
 if __name__ == '__main__':
