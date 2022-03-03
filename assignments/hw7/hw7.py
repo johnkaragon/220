@@ -40,23 +40,65 @@ def hourly_wages(in_file_name, out_file_name):
 
 
 def calc_check_sum(isbn):
-    num_list = isbn.strip("-")
+    middle_man = isbn.split("-")
+    num_list = []
+    for i in middle_man:
+        for j in i:
+            num_list.append(int(j))
+    counter = 0
+    checker = 0
+    for i in range(len(num_list), 0):
+        counter += 1
+        checker += counter * num_list[i]
+    return checker
 
 
 def send_message(file_name, friend_name):
-    pass
+    file1 = open(file_name, "r")
+    text = file1.read()
+    new_file = friend_name + ".txt"
+    file2 = open(new_file, "w")
+    file2.write(text)
+    file1.close()
+    file2.close()
 
 
-def encode():
-    pass
+def encode(message_1, key):
+    encoded_m = []
+    message_2 = ""
+    for i in message_1:
+        num = ord(i)
+        encoded_m.append(num + key)
+    for i in range(0, len(encoded_m)):
+        message_2 += chr(encoded_m[i])
+    return message_2
 
 
 def send_safe_message(file_name, friend_name, key):
-    pass
+    file1 = open(file_name, "r")
+    text = file1.read()
+    text1 = " ".join(text.split("\n"))
+    text2 = encode(text1, key)
+    new_file = friend_name + ".txt"
+    file2 = open(new_file, "w")
+    file2.write(text2)
+    file1.close()
+    file2.close()
 
 
 def send_uncrackable_message(file_name, friend_name, pad_file_name):
-    pass
+    from encryption import encode_better
+    file1 = open(file_name, "r")
+    text = file1.read()
+    text1 = " ".join(text.split("\n"))
+    key_file = open(pad_file_name, "r")
+    key = key_file.read()
+    text2 = encode_better(text1, key)
+    new_file = friend_name + ".txt"
+    file2 = open(new_file, "w")
+    file2.write(text2)
+    file1.close()
+    file2.close()
 
 
 if __name__ == '__main__':
