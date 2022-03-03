@@ -90,9 +90,11 @@ def send_uncrackable_message(file_name, friend_name, pad_file_name):
     from encryption import encode_better
     file1 = open(file_name, "r")
     text = file1.read()
+    print(text)
     text1 = " ".join(text.split("\n"))
     key_file = open(pad_file_name, "r")
     key = key_file.read()
+    print(key)
     text2 = encode_better(text1, key)
     new_file = friend_name + ".txt"
     file2 = open(new_file, "w")
@@ -100,6 +102,8 @@ def send_uncrackable_message(file_name, friend_name, pad_file_name):
     file1.close()
     file2.close()
 
+
+send_uncrackable_message("message.txt", "drew", "pad.txt")
 
 if __name__ == '__main__':
     pass
