@@ -100,10 +100,11 @@ def send_uncrackable_message(file_name, friend_name, pad_file_name):
     file2 = open(new_file, "w")
     file2.write(text2)
     file1.close()
+    key_file.close()
     file2.close()
 
 
-send_uncrackable_message("message.txt", "drew", "pad.txt")
+
 
 if __name__ == '__main__':
     pass
