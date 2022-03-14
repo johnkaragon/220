@@ -1,3 +1,5 @@
 John Aragon's average: 93.0
-Patrick Bateman's average: 93.8
-
+Drew Schlesner's average: 93.8
+Michael Bergam's average: weight exceeds limit of 100
+Adam Swidzinski's average: 85.2
+class average: 90.7
