@@ -41,3 +41,27 @@ while not is_game_over(player1, player2):
     player1 += one
     player2 += two
 
+"""
+a or (b an c) == (a or b) and (a or c)
+
+a and (b or c) == (a and b) or (a and c)
+
+DeMorgan's law-
+- not(a or b) == not a and not b  | switch the sign
+- not(a and b) == not a or not b
+
+"""
+
+
+def deMorgan_one(a, b):
+    return not(a or b) == (not a and not b)
+
+
+def deMorgan_test():
+    tests = [[True, True], [True, False], [False, True], [False, False]]
+    for test in tests:
+        print(deMorgan_one(test[0], test[1]))
+
+
+deMorgan_test()
+

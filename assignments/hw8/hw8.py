@@ -7,6 +7,7 @@ Certification of Authenticity:
 I certify that this assignment is entirely my own work.
 I certify that this assignment is my own work, but I discussed it with: <Name(s)>
 """
+from graphics import *
 
 
 def add_ten(nums):
