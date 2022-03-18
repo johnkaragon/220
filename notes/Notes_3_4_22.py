@@ -65,3 +65,14 @@ def deMorgan_test():
 
 deMorgan_test()
 
+"""
+truthy / falsy
+
+"""
+
+def whoops():
+    ans = input("Do you wanna transfer your money out of your account")
+    if ans == "y" or "Yes":
+        print("Ok")
+    else:
+        print("good idea")
