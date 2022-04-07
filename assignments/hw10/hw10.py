@@ -1,3 +1,7 @@
+#  John Aragon
+from graphics import GraphWin, Point
+from sphere import Sphere
+from face import Face
 
 
 def fibonacci(index):
@@ -53,5 +57,10 @@ def goldbach(num):
             primes.append(num - i)
             return primes
 
+def main():
+    pass
+
+
+main()
 
 
