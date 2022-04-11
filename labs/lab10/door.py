@@ -16,8 +16,8 @@ class Door:
         self.text.draw(win)
 
     def undraw(self, win):
-        self.shape.undraw(win)
-        self.text.undraw(win)
+        self.shape.undraw()
+        self.text.undraw()
 
     def is_clicked(self, point):
         x = point.getX()
