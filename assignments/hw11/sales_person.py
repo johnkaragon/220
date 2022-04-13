@@ -39,4 +39,5 @@ class SalesPerson:
         return -1
 
     def __str__(self):
-        message = str(self.employee_id) + " - " + str(self.name) + ": " + str(self.total_sales())
+        message = str(self.employee_id) + "-" + str(self.name) + ": " + str(self.total_sales())
+        return message
